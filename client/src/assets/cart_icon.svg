@@ -1,0 +1,41 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 64 64"
+  width="64"
+  height="64"
+  fill="none"
+  stroke="#1b1a1a"
+  stroke-width="2.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <!-- Handle -->
+  <path d="M6 10h8" />
+  <path d="M14 10l6 8" />
+
+  <!-- Cart body -->
+  <path d="M20 18h36l-5 22H24l-4-22z" />
+
+  <!-- Basket slats -->
+  <path d="M26 24h26" />
+  <path d="M27 30h24" />
+  <path d="M28 36h22" />
+
+  <!-- Wheels -->
+  <circle cx="26" cy="48" r="5" />
+  <circle cx="48" cy="48" r="5" />
+
+  <!-- Veggies -->
+  <!-- Leafy green -->
+  <path d="M34 20c0 4 3 7 7 7 2 0 3-1 3-3 0-4-3-7-7-7-2 0-3 1-3 3z" fill="1b1a1a" fill-opacity="0.2" />
+  <path d="M34 20c2 2 4 4 7 7" />
+
+  <!-- Tomato -->
+  <circle cx="44" cy="22" r="4.2" fill="#1b1a1a" fill-opacity="0.2" />
+  <path d="M41.5 20.5l2 1.2 2-1.2M44 18.8v2.9" />
+
+  <!-- Carrot -->
+  <path d="M30 22l6 2-4 6-6-2 4-6z" fill="#1b1a1a" fill-opacity="0.15" />
+  <path d="M31 20.5l1.5 1.5M29.5 21.3l1.2 1.2" />
+</svg>
+

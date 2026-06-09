@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="70" viewBox="0 0 260 70">
+  <!-- Leaf + O -->
+  <g>
+    <circle cx="35" cy="35" r="28" stroke="#16A34A" stroke-width="8" fill="none"/>
+    <path d="M50 18c6 4 10 12 6 20-6-1-12-7-14-13 2-4 4-6 8-7z" fill="#16A34A"/>
+  </g>
+
+  <!-- Text -->
+  <text x="75" y="45" font-family="Poppins, sans-serif" font-size="36" font-weight="700" fill="#16A34A">Orgo</text>
+  <text x="150" y="45" font-family="Poppins, sans-serif" font-size="36" font-weight="700" fill="#F97316">fresh</text>
+</svg>
