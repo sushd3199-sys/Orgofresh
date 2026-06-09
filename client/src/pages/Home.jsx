@@ -51,7 +51,6 @@ const StatsBar = () => {
   );
 };
 
-
 const DealsSection = () => {
   const { navigate } = useAppContext();
 
@@ -188,7 +187,6 @@ const Home = () => {
         paddingLeft:  "clamp(16px, 5vw, 128px)",
         paddingRight: "clamp(16px, 5vw, 128px)",
       }}>
-
         <MainBanner />
         <StatsBar />
         <Categories />
@@ -196,7 +194,6 @@ const Home = () => {
         <BestSeller />
         <BottomBanner />
         <NewsLetter />
-
       </div>
     </>
   );
