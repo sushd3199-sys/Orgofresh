@@ -189,7 +189,7 @@ const Home = () => {
         paddingRight: "clamp(16px, 5vw, 128px)",
       }}>
 
-        <Mainbanner />
+        <MainBanner />
         <StatsBar />
         <Categories />
         <DealsSection />
