@@ -1,5 +1,5 @@
 import React from "react";
-import Mainbanner from "../components/Mainbanner";
+import MainBanner from "../components/MainBanner";
 import Categories from "../components/Categories";
 import BestSeller from "../components/BestSeller";
 import BottomBanner from "../components/BottomBanner";
@@ -7,7 +7,6 @@ import NewsLetter from "../components/Newsletter";
 import SaleBanner from "../components/SaleBanner";
 import { useAppContext } from "../context/AppContext";
 
-// ── Quick stats bar shown below the main banner ───────────────────────────────
 const StatsBar = () => {
   const stats = [
     { icon: "🚀", label: "30-Min Delivery",    sub: "In selected areas"      },
@@ -52,7 +51,7 @@ const StatsBar = () => {
   );
 };
 
-// ── Special Deals banner between sections ─────────────────────────────────────
+
 const DealsSection = () => {
   const { navigate } = useAppContext();
 
@@ -88,7 +87,6 @@ const DealsSection = () => {
 
   return (
     <div style={{ marginTop: 64, fontFamily: "'Outfit', 'Roboto', sans-serif" }}>
-      {/* Section header */}
       <div style={{ marginBottom: 24 }}>
         <p style={{
           margin: "0 0 6px", fontSize: 12, fontWeight: 700,
@@ -108,7 +106,6 @@ const DealsSection = () => {
         }} />
       </div>
 
-      {/* Deal cards */}
       <div style={{
         display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 16,
       }}
@@ -133,7 +130,7 @@ const DealsSection = () => {
               e.currentTarget.style.boxShadow = "none";
             }}
           >
-            {/* Badge */}
+
             <span style={{
               display: "inline-block", fontSize: 11, fontWeight: 700,
               color: "#fff", background: deal.accent,
@@ -159,7 +156,7 @@ const DealsSection = () => {
               Shop Now →
             </span>
 
-            {/* Big emoji decoration */}
+     
             <span style={{
               position: "absolute", right: 16, bottom: 10,
               fontSize: 56, opacity: 0.3, lineHeight: 1,
@@ -181,38 +178,23 @@ const DealsSection = () => {
   );
 };
 
-// ── Main Home Page ────────────────────────────────────────────────────────────
 const Home = () => {
   return (
     <>
-      {/* Sale announcement banner — full width */}
+  
       <SaleBanner />
 
-      {/* All home content with consistent padding */}
       <div style={{
         paddingLeft:  "clamp(16px, 5vw, 128px)",
         paddingRight: "clamp(16px, 5vw, 128px)",
       }}>
 
-        {/* Hero banner slider */}
         <Mainbanner />
-
-        {/* Quick stats row */}
         <StatsBar />
-
-        {/* Category pills */}
         <Categories />
-
-        {/* Today's deals */}
         <DealsSection />
-
-        {/* Best sellers */}
         <BestSeller />
-
-        {/* Why choose us + image banner */}
         <BottomBanner />
-
-        {/* Newsletter signup */}
         <NewsLetter />
 
       </div>
